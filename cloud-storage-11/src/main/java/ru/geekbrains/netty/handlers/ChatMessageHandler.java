@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package ru.geekbrains.netty.handlers;
-=======
-package com.polozov.netty.handlers;
->>>>>>> origin/master
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
