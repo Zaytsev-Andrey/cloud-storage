@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 package ru.geekbrains.netty;
 
 import ru.geekbrains.netty.handlers.ByteBufInputHandler;
 import ru.geekbrains.netty.handlers.ChatMessageHandler;
 import ru.geekbrains.netty.handlers.OutputHandler;
+=======
+package com.polozov.netty;
+
+import com.polozov.netty.handlers.ByteBufInputHandler;
+import com.polozov.netty.handlers.ChatMessageHandler;
+import com.polozov.netty.handlers.OutputHandler;
+>>>>>>> origin/master
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
