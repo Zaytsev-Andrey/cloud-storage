@@ -1,4 +1,4 @@
-package com.polozov.netty.handlers;
+package ru.geekbrains.netty.handlers;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

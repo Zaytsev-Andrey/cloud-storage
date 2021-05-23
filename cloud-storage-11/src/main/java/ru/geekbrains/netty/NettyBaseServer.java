@@ -1,8 +1,8 @@
-package com.polozov.netty;
+package ru.geekbrains.netty;
 
-import com.polozov.netty.handlers.ByteBufInputHandler;
-import com.polozov.netty.handlers.ChatMessageHandler;
-import com.polozov.netty.handlers.OutputHandler;
+import ru.geekbrains.netty.handlers.ByteBufInputHandler;
+import ru.geekbrains.netty.handlers.ChatMessageHandler;
+import ru.geekbrains.netty.handlers.OutputHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
