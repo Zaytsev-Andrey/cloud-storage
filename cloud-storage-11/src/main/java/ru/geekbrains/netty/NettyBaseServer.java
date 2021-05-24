@@ -1,8 +1,6 @@
 package ru.geekbrains.netty;
 
-import ru.geekbrains.netty.handlers.ByteBufInputHandler;
-import ru.geekbrains.netty.handlers.ChatMessageHandler;
-import ru.geekbrains.netty.handlers.OutputHandler;
+import ru.geekbrains.netty.handlers.*;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -28,14 +26,26 @@ public class NettyBaseServer {
 						protected void initChannel(Channel ch) throws Exception {
 							ch.pipeline().addLast(
 									new StringEncoder(),
-									new StringDecoder(),
+//									new StringDecoder(),
 //									new ByteBufInputHandler(), // in-1
 //									new OutputHandler(), // out-2
-									new ChatMessageHandler()
+//									new ChatMessageHandler()
+									new CloudStorageHandler(),
+									new ExitOperationHandler(),
+									new HelpOperationHandler(),
+									new CDOperationHandler(),
+									new LSOperationHandler(),
+									new MKDIROperationHandler(),
+									new TouchOperationHandler(),
+									new RMOperationHandler(),
+									new CPOperationHandler(),
+									new CatOperationHandler(),
+									new ChangeNicknameOperationHandler(),
+									new PromptHandler()
 							);
 						}
 					});
-			ChannelFuture future = bootstrap.bind(4000).sync();
+			ChannelFuture future = bootstrap.bind(5678).sync();
 			System.out.println("Server started");
 			future.channel().closeFuture().sync();
 			System.out.println("Server closed");
